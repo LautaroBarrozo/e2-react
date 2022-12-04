@@ -75,9 +75,9 @@ const Todo = () => {
     e.preventDefault()
 
     if(tasks.some((task) => task.toLowerCase() === e.target.todo.value.toLowerCase())){
-        return alert("k hace chinchulin")
+        return alert("esta tarea ya se encuantra en la lista")
     } else if (e.target.todo.value === ""){
-        return alert("comleta e campo cara masa")
+        return alert("se debe completar el campo")
     }
     setTasks([...tasks, e.target.todo.value])
     console.log(tasks);
